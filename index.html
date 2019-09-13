@@ -4,47 +4,82 @@
 	<meta charset="utf-8">
 	<meta lang="en">
 	<title>RobertFlunger | My first website</title>
-	<link rel="stylesheet" href="">
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 	
-	<header id="header" class="">
-		<div>
-			<img src="codefactory-vienna-logo.png" alt="Code Factory logo">
-			<h1>Robert Flunger - I am a future Full Stack Web Developer</h1>
-		</div>
-		<nav id="navbar">
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About Me</a></li>
-				<li><a href="#">Blog</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
-		</nav>
-		
-	</header><!-- /header -->
-
-	<main>
-		<h1> This is my first website :) </h1>
-		
-		<div>
-			<p>Lates Blog Posts</p>			
-		</div>
-
-		<img src="Phone.png" alt="A smartphone">
-		<img src="Taxify-Scooters.jpg" alt="Taxify E-Scooters">
-		<img src="Devices.jpg" alt="different devices">
-		<img src="Debit_card_ATM.jpg" alt="Debit Card & ATM">
-
-		<hr>
-
-	</main>
-
-	<footer>
+<header id="header" class="">
+	<div class="headlogo">
 		<img src="codefactory-vienna-logo.png" alt="Code Factory logo">
-		<p>Robert Flunger - CodeFactory 2019</p>
-	</footer>
+		<h1>Robert Flunger - I am a future Full Stack Web Developer</h1>
+	</div>
+	
+	<nav class="navbar">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About Me</a></li>
+			<li><a href="#">Blog</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</nav>
+		
+</header><!-- /header -->
+
+<main>
+	
+	<div id="title">
+		<h1> This is my first <br> website :) </h1>
+	</div>
+
+	<div id="blogposts">
+		<p>Latest Blog Posts</p>			
+	</div>
+		
+	<div class="blogcontent">
+
+		<div class="row">
+
+			<div class="pics">
+				<img src="Phone.png" alt="A smartphone">
+				<p>Location marketing platform Uberall raises further $25M and acquires competitor Navads </p>	
+			</div>
+			
+			<div class="pics">
+				<img src="Taxify-Scooters.jpg" alt="Taxify E-Scooters">
+				<p>Taxify is entering the e-scooter game</p>
+			</div>
+		
+		</div>
+		
+		<br>
+		
+		<div class="row">
+			
+			<div class="pics">
+				<img src="Devices.jpg" alt="different devices">
+				<p>Livongo Health expands under new offering with Abbott Labs</p>
+			</div>
+
+			<div class="pics">	
+				<img src="Debit_card_ATM.jpg" alt="Debit Card & ATM">
+				<p>European banking app Monese scores $60M Series B led by Kinnevik</p>
+			</div>	
+		
+		</div>
+
+		</div>
+
+	<hr>
+
+</main>
+
+<footer>
+	
+	<img src="codefactory-vienna-logo.png" alt="Code Factory logo">
+	<p>Robert Flunger - CodeFactory 2019</p>
+	
+</footer>
 
 </body>
 </html>
