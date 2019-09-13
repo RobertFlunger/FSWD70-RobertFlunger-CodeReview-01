@@ -1,34 +1,61 @@
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
 .headlogo {
 	background-color: #EDEDED;
 	display: flex;
 	width: 100%;
-	margin: 0px;
+	margin: 0;
+	padding: 0;
 }
 
 .headlogo img {
-	width: 200px;
-	margin: 0 10px 10px 0;
+	width: 250px;
+	margin: 10px 10px 10px 0;
+	max-width: 250px; /* to make the image scale down better */
+	height: auto;
 }
 
-.navbar {
+@media screen and (max-width:800px) {
+	.headlogo img {
+		width: auto;
+		height: 150px;
+	}
+}
+
+.headlogo h1 {
+	position: relative;
+	top: 15px;
+	left: -15px; 
+}
+
+nav {
 	display: flex;
 	background-color: #653D3D;
 	width: 100%;
+	margin-left: 0px;
 }
 
-.navbar ul {
+nav ul {
 	list-style-type: none;
+	overflow: hidden;
 }
 
-.navbar li {
-	display: inline;
+nav li {
+	float: left;
 	text-transform: uppercase;
-
 }
 
-.navbar a {
+nav li a {
+	display: block;
+	text-align: justify;
 	text-decoration: none;
 	color: white;
+	font-weight: bold;
+	margin: 0 35px 0 -10px;
 }
 
 #title {
@@ -37,22 +64,20 @@
 }
 
 #blogposts {
+	width: calc(100%-35px);
 	background-color: #978484;
 	text-transform: uppercase;
+	font-weight: bold;
 	color: white;
+	padding-left: 30px;
+	margin-top: 15px;
+	margin-bottom: 20px;
+	display: flex;
 }
-
-/* .blogcontent {
-	width: 100%;
-	border: 1px solid red;
-}
-
-.blogcontent img {
-	
-} */
 
 .blogcontent {
 	width: 100%;
+	margin-bottom: 50px;
 }
 
 .row {
@@ -80,10 +105,6 @@
 	font-size: 20pt;
 }
 
-.line {
-	size: 3px;
-	color: #978484;
-}
 
 .footer {
 	text-align: center;
