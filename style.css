@@ -1,7 +1,8 @@
 
 body {
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
+	width: 80%;
 }
 
 .headlogo {
@@ -101,8 +102,14 @@ nav li a {
 }
 
 .pics p {
+	margin-top: 0;
+}
+
+.pics p a {
 	font-weight: bold;
 	font-size: 20pt;
+	text-decoration: none;
+	color: black;
 }
 
 
