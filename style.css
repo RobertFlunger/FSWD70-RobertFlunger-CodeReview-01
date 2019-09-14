@@ -14,22 +14,15 @@ body {
 }
 
 .headlogo img {
-	width: 250px;
+	width: 25%;
 	margin: 10px 10px 10px 0;
-	max-width: 250px; /* to make the image scale down better */
 	height: auto;
 }
 
-@media screen and (max-width:800px) {
-	.headlogo img {
-		width: auto;
-		height: 150px;
-	}
-}
 
 .headlogo h1 {
 	position: relative;
-	top: 15px;
+	top: 5px;
 	left: -15px; 
 }
 
@@ -59,7 +52,7 @@ nav li a {
 	margin: 0 35px 0 -10px;
 }
 
-#title {
+.title {
 	text-align: center;
 	font-size: 40pt;
 }
@@ -91,7 +84,9 @@ nav li a {
 
 .pics {
 	width: 45%;
+	height: auto;
 	margin-bottom: -50px;
+	margin-top: 20px;
 }
 
 
@@ -103,15 +98,25 @@ nav li a {
 
 .pics p {
 	margin-top: 0;
+	width: 100%;
+	height: auto;
 }
 
 .pics p a {
 	font-weight: bold;
-	font-size: 20pt;
+	font-size: 12pt;
 	text-decoration: none;
 	color: black;
 }
 
+@media only screen and (max-width: 800px) {  /* fixing paragraphs for smaller devices */
+	.pics p {
+		margin: 0px;
+	}
+	.pics {
+		margin-bottom: 25px;
+	}
+}
 
 .footer {
 	text-align: center;
@@ -119,18 +124,75 @@ nav li a {
 }
 
 
-
-
-/* .pics img {
-	display: block;
-} */
-
-
-/* .imgcont1 {
-	display: flex;
-	overflow: hidden;
-	justify-content: space-between;
-	width: 100%;
+.footer img {
+	width: 30%;
+	height: auto;
 }
 
- */
+/* code for contact.html */
+
+#contactform {
+	text-align: center;
+	border: 1px solid black;
+	padding: 15px 0;
+	margin-bottom: 25px;
+}
+
+#form {
+	display: inline-block;
+	text-align: left;
+	font-weight: bold;
+}
+
+/* code for about.html */
+
+.about {
+	width: 100%;
+	height: auto;
+	display: flex;
+	background-color: #978484;
+	margin-bottom: 25px;
+}
+
+.portrait img {
+	width: 80%;
+	height: auto;
+	margin-right: 25px;
+}
+
+#profile {
+	color: white;
+}
+
+#profile dt {
+	font-weight: bold;
+}
+
+#profile p {
+	font-style: italic;
+}
+
+/* Code for blog.html */
+
+.newsfeed {
+	width: 100%;
+	height: auto;
+	margin-bottom: 25px;
+	display: flex;
+}
+
+.pic_small img {
+	width: 100px;
+	height: auto;
+	margin-right: 25px;
+}
+
+div.newsfeed a {
+	text-decoration: none;
+	color: black;
+}
+
+
+div.newsfeed a:hover {
+	color: blue;
+}
